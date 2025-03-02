@@ -5,28 +5,20 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div>
+    <div className="text-slate-800">
       <Header />
       <main className="pt-16">
-        <section id="home">
-          <Home />
-        </section>
-        <section id="about">
-          <About />
-        </section>
-        <section id="projects">
-          <Projects />
-        </section>
-        <section id="resume">
-          <Resume />
-        </section>
-        <section id="contact">
-          <Contact />
-        </section>
+        <Home />
+        <About />
+        <Projects />
+        <Resume />
+        <Contact />
       </main>
+      <Footer />
     </div>
   );
 }

@@ -1,9 +1,8 @@
-// Header.js
 import React from 'react';
 
 function Header() {
   return (
-    <header className="bg-blue-600 text-white p-4 fixed w-full z-10 shadow-md">
+    <header className="bg-slate-800 text-white p-4 fixed w-full z-10 shadow-md">
       <nav className="container mx-auto flex justify-between items-center">
         <div className="font-bold text-xl">My Portfolio</div>
         <ul className="flex space-x-4">
