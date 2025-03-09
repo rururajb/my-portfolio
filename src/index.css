@@ -2,14 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: yellow;
-}
-/* Test class to check if Tailwind is processing */
-.test-bg {
-  @apply bg-red-500;
+/* Global styles or custom classes here */
+html {
+  scroll-behavior: smooth;
 }
 
-
-
-
+/* Optional: custom variable usage if you like */
+:root {
+  --pastel-purple: #ede9fe;
+  --pastel-blue: #e0f2fe;
+}

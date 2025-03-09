@@ -1,26 +1,35 @@
 import React from 'react';
 
 function Projects() {
-  return (
-    <section id="projects" className="py-16 bg-gray-50 text-slate-800">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-6 text-center">Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Project Card */}
-          <div className="bg-white rounded shadow p-6">
-            <h3 className="text-2xl font-semibold mb-2">AML Monitoring Framework</h3>
-            <p className="text-gray-700 mb-2">
-              Developed a Python-based framework to analyze financial transaction data, integrated with SQLite.
-            </p>
-          </div>
+  const projects = [
+    {
+      title: "Project One",
+      description: "Brief description of project one. Maybe a link or image."
+    },
+    {
+      title: "Project Two",
+      description: "Brief description of project two. Another link or image."
+    },
+  ];
 
-          {/* Another Project Card */}
-          <div className="bg-white rounded shadow p-6">
-            <h3 className="text-2xl font-semibold mb-2">Research Study Manager</h3>
-            <p className="text-gray-700 mb-2">
-              Created a full-stack web application for campus research management with CAS & Google OAuth for SSO.
-            </p>
-          </div>
+  return (
+    <section id="projects" className="py-20 bg-pastelBlue">
+      <div className="container mx-auto px-4">
+        <h2 className="text-4xl font-bold text-center mb-12 text-blue-700">
+          Projects
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {projects.map((project, i) => (
+            <div
+              key={i}
+              className="p-6 bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow"
+            >
+              <h3 className="text-2xl font-semibold mb-2 text-blue-800">
+                {project.title}
+              </h3>
+              <p className="text-gray-700">{project.description}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

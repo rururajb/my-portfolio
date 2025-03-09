@@ -1,17 +1,11 @@
 import React from 'react';
 
-function About() {
+function App() {
   return (
-    <section id="about" className="py-16 bg-white text-slate-800">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-6 text-center">About Me</h2>
-        <p className="max-w-3xl mx-auto text-lg leading-relaxed text-center">
-          Hello! I’m [Your Name], a software developer with a passion for [XYZ]. I’m currently studying
-          at [University/College], and I love building apps that solve real-world problems...
-        </p>
-      </div>
-    </section>
+    <div className="min-h-screen bg-red-500 text-white flex items-center justify-center">
+      <h1 className="text-5xl">Red Screen Test</h1>
+    </div>
   );
 }
 
-export default About;
+export default App;
