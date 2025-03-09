@@ -3,16 +3,11 @@
 @tailwind utilities;
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: yellow;
 }
-
-html {
-  scroll-behavior: smooth;
+/* Test class to check if Tailwind is processing */
+.test-bg {
+  @apply bg-red-500;
 }
 
 
